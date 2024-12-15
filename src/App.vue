@@ -1,7 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-  <a class="navbar-brand" href="#">Login</a>
-</nav>
+  <NavBar/>
 <main class="form-signin w-100 m-auto">
   <form>
     <div class="form-floating">
@@ -17,7 +15,12 @@
   </form>
 </main>
 </template>
-
+<script>
+import NavBar from "./components/Nav";
+export default{
+  components:{NavBar}
+}
+</script>
 <style>
 html,
 body {
